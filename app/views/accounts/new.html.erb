@@ -1,0 +1,13 @@
+<h1>Add Account</h1>
+
+<%= form_with(model: @account, local:true) do |f| %>
+<%# form_for @account do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name, required:true %>
+
+  <%= f.label :balance %>
+  <%= f.number_field :balance, required:true %>
+
+
+  <%= f.submit %>
+<% end %>
